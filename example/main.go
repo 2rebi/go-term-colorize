@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	termcolor "go-term-colorize"
+	termcolor "github.com/rebirthlee/go-term-colorize"
 )
 
 func main() {

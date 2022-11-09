@@ -4,7 +4,7 @@ import "fmt"
 
 type BrightColorType string
 
-var (
+const (
 	BrightColorTypeForeground BrightColorType = "9"
 	BrightColorTypeBackground BrightColorType = "10"
 )
@@ -23,7 +23,7 @@ func (code BrightColorCode) Background(str string) string {
 	return code.Colorize(BrightColorTypeBackground, str)
 }
 
-var (
+const (
 	// BrightBlack color hex = #555753
 	BrightBlack BrightColorCode = "%s0"
 	// BrightRed color hex = #ef2929

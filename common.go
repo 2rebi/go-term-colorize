@@ -1,5 +1,5 @@
 package termcolor
 
-var (
+const (
 	Reset = "\x1b[0m"
 )

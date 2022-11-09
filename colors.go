@@ -4,7 +4,7 @@ import "fmt"
 
 type ColorType rune
 
-var (
+const (
 	ColorTypeForeground ColorType = '3'
 	ColorTypeBackground ColorType = '4'
 )
@@ -23,7 +23,7 @@ func (code ColorCode) Background(str string) string {
 	return code.Colorize(ColorTypeBackground, str)
 }
 
-var (
+const (
 
 	// StdBlack color hex = #000000
 	StdBlack ColorCode = "%c0"
